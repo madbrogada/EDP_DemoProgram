@@ -27,20 +27,22 @@ Partial Class Form4
         '
         'BtnRunSamplecode
         '
-        Me.BtnRunSamplecode.Location = New System.Drawing.Point(255, 294)
+        Me.BtnRunSamplecode.Location = New System.Drawing.Point(227, 235)
+        Me.BtnRunSamplecode.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnRunSamplecode.Name = "BtnRunSamplecode"
-        Me.BtnRunSamplecode.Size = New System.Drawing.Size(423, 97)
+        Me.BtnRunSamplecode.Size = New System.Drawing.Size(376, 78)
         Me.BtnRunSamplecode.TabIndex = 0
         Me.BtnRunSamplecode.Text = "Run Sample Code"
         Me.BtnRunSamplecode.UseVisualStyleBackColor = True
         '
         'Form4
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(882, 506)
+        Me.ClientSize = New System.Drawing.Size(784, 405)
         Me.Controls.Add(Me.BtnRunSamplecode)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form4"
         Me.Text = "Form4"
         Me.ResumeLayout(False)

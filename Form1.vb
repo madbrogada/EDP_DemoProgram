@@ -13,7 +13,7 @@ Public Class Form1
                 mycmd.CommandText = strSQL
                 mycmd.Connection = myconn
                 mycmd.ExecuteNonQuery()
-                MsgBox("Record Successfully Added")
+                MsgBox("Record Successfully Added!!!!!!!!!")
                 Call Clear_Boxes()
             Catch ex As MySqlException
                 MsgBox(ex.Number & " " & ex.Message)

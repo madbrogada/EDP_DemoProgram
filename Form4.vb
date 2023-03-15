@@ -17,4 +17,8 @@ Public Class Form4
     Private Sub BtnRunSamplecode_Click(sender As Object, e As EventArgs) Handles BtnRunSamplecode.Click
         Call InsertRow("Database=simulation;Data Source=localhost;User Id=edpadmin;Password=mike")
     End Sub
+
+    Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'sample
+    End Sub
 End Class
