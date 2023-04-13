@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class frmCRUD
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -31,13 +31,17 @@ Partial Class Form1
         Me.TextSearch = New System.Windows.Forms.TextBox()
         Me.BtnUpdate = New System.Windows.Forms.Button()
         Me.BtnDelete = New System.Windows.Forms.Button()
+        Me.btnBackup = New System.Windows.Forms.Button()
+        Me.btnLocate = New System.Windows.Forms.Button()
+        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.SuspendLayout()
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(48, 203)
+        Me.btnAdd.Location = New System.Drawing.Point(43, 162)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(229, 55)
+        Me.btnAdd.Size = New System.Drawing.Size(204, 44)
         Me.btnAdd.TabIndex = 0
         Me.btnAdd.Text = "Add Record"
         Me.btnAdd.UseVisualStyleBackColor = True
@@ -45,42 +49,45 @@ Partial Class Form1
         'lblUsername
         '
         Me.lblUsername.AutoSize = True
-        Me.lblUsername.Location = New System.Drawing.Point(44, 81)
+        Me.lblUsername.Location = New System.Drawing.Point(39, 65)
         Me.lblUsername.Name = "lblUsername"
-        Me.lblUsername.Size = New System.Drawing.Size(115, 20)
+        Me.lblUsername.Size = New System.Drawing.Size(93, 16)
         Me.lblUsername.TabIndex = 1
         Me.lblUsername.Text = "Department ID"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(44, 140)
+        Me.Label1.Location = New System.Drawing.Point(39, 112)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(140, 20)
+        Me.Label1.Size = New System.Drawing.Size(117, 16)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Department Name"
         '
         'TextDeptID
         '
         Me.TextDeptID.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextDeptID.Location = New System.Drawing.Point(213, 81)
+        Me.TextDeptID.Location = New System.Drawing.Point(189, 65)
+        Me.TextDeptID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextDeptID.Name = "TextDeptID"
-        Me.TextDeptID.Size = New System.Drawing.Size(603, 44)
+        Me.TextDeptID.Size = New System.Drawing.Size(536, 38)
         Me.TextDeptID.TabIndex = 3
         '
         'TextDeptName
         '
         Me.TextDeptName.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextDeptName.Location = New System.Drawing.Point(213, 140)
+        Me.TextDeptName.Location = New System.Drawing.Point(189, 112)
+        Me.TextDeptName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextDeptName.Name = "TextDeptName"
-        Me.TextDeptName.Size = New System.Drawing.Size(603, 44)
+        Me.TextDeptName.Size = New System.Drawing.Size(536, 38)
         Me.TextDeptName.TabIndex = 4
         '
         'BtnSearch
         '
-        Me.BtnSearch.Location = New System.Drawing.Point(640, 12)
+        Me.BtnSearch.Location = New System.Drawing.Point(569, 10)
+        Me.BtnSearch.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnSearch.Name = "BtnSearch"
-        Me.BtnSearch.Size = New System.Drawing.Size(176, 55)
+        Me.BtnSearch.Size = New System.Drawing.Size(156, 44)
         Me.BtnSearch.TabIndex = 5
         Me.BtnSearch.Text = "Search"
         Me.BtnSearch.UseVisualStyleBackColor = True
@@ -88,34 +95,57 @@ Partial Class Form1
         'TextSearch
         '
         Me.TextSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextSearch.Location = New System.Drawing.Point(489, 17)
+        Me.TextSearch.Location = New System.Drawing.Point(435, 14)
+        Me.TextSearch.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextSearch.Name = "TextSearch"
-        Me.TextSearch.Size = New System.Drawing.Size(145, 44)
+        Me.TextSearch.Size = New System.Drawing.Size(129, 38)
         Me.TextSearch.TabIndex = 6
         '
         'BtnUpdate
         '
-        Me.BtnUpdate.Location = New System.Drawing.Point(312, 203)
+        Me.BtnUpdate.Location = New System.Drawing.Point(277, 162)
+        Me.BtnUpdate.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnUpdate.Name = "BtnUpdate"
-        Me.BtnUpdate.Size = New System.Drawing.Size(229, 55)
+        Me.BtnUpdate.Size = New System.Drawing.Size(204, 44)
         Me.BtnUpdate.TabIndex = 7
         Me.BtnUpdate.Text = "Update Record"
         Me.BtnUpdate.UseVisualStyleBackColor = True
         '
         'BtnDelete
         '
-        Me.BtnDelete.Location = New System.Drawing.Point(587, 203)
+        Me.BtnDelete.Location = New System.Drawing.Point(522, 162)
+        Me.BtnDelete.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnDelete.Name = "BtnDelete"
-        Me.BtnDelete.Size = New System.Drawing.Size(229, 55)
+        Me.BtnDelete.Size = New System.Drawing.Size(204, 44)
         Me.BtnDelete.TabIndex = 8
         Me.BtnDelete.Text = "Delete Record"
         Me.BtnDelete.UseVisualStyleBackColor = True
         '
-        'Form1
+        'btnBackup
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.btnBackup.Location = New System.Drawing.Point(43, 221)
+        Me.btnBackup.Name = "btnBackup"
+        Me.btnBackup.Size = New System.Drawing.Size(204, 40)
+        Me.btnBackup.TabIndex = 9
+        Me.btnBackup.Text = "Backup Database"
+        Me.btnBackup.UseVisualStyleBackColor = True
+        '
+        'btnLocate
+        '
+        Me.btnLocate.Location = New System.Drawing.Point(277, 224)
+        Me.btnLocate.Name = "btnLocate"
+        Me.btnLocate.Size = New System.Drawing.Size(204, 37)
+        Me.btnLocate.TabIndex = 10
+        Me.btnLocate.Text = "Locate Data"
+        Me.btnLocate.UseVisualStyleBackColor = True
+        '
+        'frmCRUD
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(849, 282)
+        Me.ClientSize = New System.Drawing.Size(755, 336)
+        Me.Controls.Add(Me.btnLocate)
+        Me.Controls.Add(Me.btnBackup)
         Me.Controls.Add(Me.BtnDelete)
         Me.Controls.Add(Me.BtnUpdate)
         Me.Controls.Add(Me.TextSearch)
@@ -125,7 +155,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblUsername)
         Me.Controls.Add(Me.btnAdd)
-        Me.Name = "Form1"
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Name = "frmCRUD"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main Form"
         Me.ResumeLayout(False)
@@ -142,4 +173,7 @@ Partial Class Form1
     Friend WithEvents TextSearch As TextBox
     Friend WithEvents BtnUpdate As Button
     Friend WithEvents BtnDelete As Button
+    Friend WithEvents btnBackup As Button
+    Friend WithEvents btnLocate As Button
+    Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
 End Class

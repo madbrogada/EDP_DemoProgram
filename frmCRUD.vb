@@ -1,7 +1,7 @@
 ﻿Imports System.Diagnostics.Eventing
 Imports MySql.Data.MySqlClient
 
-Public Class Form1
+Public Class frmCRUD
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         With Me
             Call Connect_to_DB()
@@ -100,5 +100,20 @@ Public Class Form1
             End Try
             Disconnect_to_DB()
         End With
+    End Sub
+
+    Private Sub btnBackup_Click(sender As Object, e As EventArgs) Handles btnBackup.Click
+        Dim RetVal
+        RetVal = Shell("D:\backupfunction.bat", 1)
+    End Sub
+
+    Private Sub btnLocate_Click(sender As Object, e As EventArgs) Handles btnLocate.Click
+        With Me
+            .FolderBrowserDialog1.ShowDialog()
+        End With
+    End Sub
+
+    Private Sub frmCRUD_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

@@ -1,6 +1,6 @@
 Imports MySql.Data.MySqlClient
 
-Public Class LoginForm1
+Public Class frmLogin
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
         With Me
@@ -19,7 +19,7 @@ Public Class LoginForm1
             myreader = mycmd.ExecuteReader
             If myreader.HasRows Then
                 .Hide()
-                Form1.Show()
+                frmCRUD.Show()
             Else
                 MessageBox.Show("Invalid username or password")
             End If

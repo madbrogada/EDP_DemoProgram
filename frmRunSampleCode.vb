@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Form4
+Public Class frmRunSampleCode
     Public Sub InsertRow(myConnectionString As String)
         'If myConnectionString = "" Then
         'myConnectionString = "Database=simulation;Data Source=localhost;User Id=edpadmin;Password=mike"
